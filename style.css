@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-poppins {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 85px;
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+}
+.nav-text-content{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #3A3A3A;
+}
+.nav-content-list ul{
+    display: flex;
+    list-style: none;
+    gap: 34px;
+}
+#max-device{
+    display: none;
+}
+.nav-content-list ul li{
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+
+/* Responsive design part */
+ @media screen and (max-width : 350px) {
+    nav{
+        width: 95%;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    #max-device{
+         display: block;
+       }
+    .nav-content-list ul{
+        display: none;
+    }
+    .nav-text-content{
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+ }
