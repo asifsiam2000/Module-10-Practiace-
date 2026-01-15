@@ -76,6 +76,18 @@ nav{
     background-position: center;
     background-size: cover;
 }
+/* website section  */
+.website-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 72%;
+    height: 110px;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.1) , 0 10px 10px -10px rgba(0, 0, 0, 0.1);
+}
 /* Responsive design part */
  @media screen and (max-width : 350px) {
     nav{
@@ -122,5 +134,23 @@ nav{
     }
     .hero-content-text p{
         font-size: 14px;
+    }
+    .website-content{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: none;
+        /* align-items: center;
+        text-align: center; */
+    }
+    .website-content img{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center;
+        text-align: center; */
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 0;
     }
  }
